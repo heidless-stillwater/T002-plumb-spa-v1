@@ -15,7 +15,7 @@ const fontSans = PT_Sans({
 
 export const metadata: Metadata = {
   title: 'FlowPro Plumbing',
-  description: 'Reliable plumbing services for your home and business.',
+  description: 'Your trusted partner for all residential and commercial plumbing needs. Fast, reliable, and professional solutions are just a call away.',
   icons: [{ rel: 'icon', url: '/favicon.ico' }],
 };
 

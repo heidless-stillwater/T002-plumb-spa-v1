@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Logo from '@/components/icons/logo';
 import { cn } from '@/lib/utils';
+import { ThemeSwitcher } from './theme-switcher';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -56,6 +57,7 @@ export default function Header() {
           <a href="#contact">
             <Button>Start Here</Button>
           </a>
+          <ThemeSwitcher />
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">

@@ -1,3 +1,4 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -15,18 +16,21 @@ const testimonials = [
     avatar: "SL",
     title: "Homeowner",
     quote: "FlowPro was a lifesaver! They arrived on time, diagnosed the issue quickly, and fixed our leaking pipe with such professionalism. Highly recommended!",
+    image: "https://storage.googleapis.com/heidless_case_studies/c-plumbing/headshot-black-female-0.jpeg",
   },
   {
     name: "Mike Johnson",
     avatar: "MJ",
     title: "Restaurant Owner",
     quote: "We had a major plumbing emergency at our restaurant. FlowPro responded immediately, even after hours, and got our kitchen back up and running. Incredibly reliable service.",
+    image: "https://storage.googleapis.com/heidless_case_studies/c-plumbing/headshot-white-male-0.jpeg",
   },
   {
     name: "David Chen",
     avatar: "DC",
     title: "Property Manager",
     quote: "I manage multiple properties and FlowPro is my go-to for all plumbing needs. They are consistently professional, fairly priced, and do excellent work. A true partner.",
+    image: "https://storage.googleapis.com/heidless_case_studies/c-plumbing/headshot-asian-male-0.jpeg",
   },
 ];
 
@@ -40,7 +44,7 @@ export default function TestimonialsSection() {
             What Our Clients Say
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
-            We're proud of our work and our clients agree.
+            We're proud of our work and our clients TEST agree.
           </p>
         </div>
         <Carousel
@@ -58,7 +62,7 @@ export default function TestimonialsSection() {
                     <CardContent className="flex flex-col items-center justify-center p-6 text-center">
                       <div className="flex flex-col items-center gap-2 mb-4">
                         <Avatar>
-                          <AvatarImage src={`https://placehold.co/40x40?text=${testimonial.avatar}`} />
+                          <AvatarImage src={testimonial.image} />
                           <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                         </Avatar>
                         <div>

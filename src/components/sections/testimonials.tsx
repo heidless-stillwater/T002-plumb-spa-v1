@@ -62,8 +62,7 @@ export default function TestimonialsSection() {
                 <div className="p-1">
                   <Card className="h-full">
                     <CardContent className="flex flex-col items-center justify-center p-6 text-center">
-                      <p className="text-muted-foreground mb-4 h-32">"{testimonial.quote}"</p>
-                      <div className="flex items-center gap-4">
+                      <div className="flex flex-col items-center gap-2 mb-4">
                         <Avatar>
                           <AvatarImage src={`https://placehold.co/40x40?text=${testimonial.avatar}`} />
                           <AvatarFallback>{testimonial.avatar}</AvatarFallback>
@@ -73,6 +72,7 @@ export default function TestimonialsSection() {
                           <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                         </div>
                       </div>
+                      <p className="text-muted-foreground text-sm">"{testimonial.quote}"</p>
                     </CardContent>
                   </Card>
                 </div>

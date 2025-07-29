@@ -21,7 +21,7 @@ export default function AboutSection() {
               <CardHeader className="p-0">
                 <Badge className="w-fit mb-2">About Us</Badge>
                 <CardTitle className="text-3xl font-bold text-primary">
-                  Your Trusted Local Plumber
+                  Your Trusted TEST Local Plumber
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-0 mt-4 space-y-4 text-muted-foreground">
@@ -29,7 +29,7 @@ export default function AboutSection() {
                   With over 15 years of hands-on experience in the plumbing industry, FlowPro Plumbing was founded on the principles of honesty, integrity, and unparalleled craftsmanship. I am a certified master plumber dedicated to providing top-quality solutions that last.
                 </p>
                 <p>
-                  From leaky faucets to complex commercial installations, I approach every job with the same commitment to excellence. My goal is to not only fix your plumbing issues but also to build lasting relationships with my clients through reliable service and transparent communication.
+                  From leaky faucets to complex commercial installations, I approach every job with the same commitment to excellence. My goal is to not only fix your plumbing issues but also to build lasting relationships with my clients through reliable service and transparent TEST communication.
                 </p>
               </CardContent>
             </div>

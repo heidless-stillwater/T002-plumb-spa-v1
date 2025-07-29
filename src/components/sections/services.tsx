@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wrench, ShowerHead, Plug, ShieldCheck } from "lucide-react";
 
@@ -29,6 +30,7 @@ export default function ServicesSection() {
     <section id="services" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
+          <Badge className="w-fit mb-2">Our Services</Badge>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Our Plumbing Services
           </h2>

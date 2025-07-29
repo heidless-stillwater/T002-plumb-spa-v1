@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
@@ -16,13 +17,14 @@ export default function AboutSection() {
                 objectFit="cover"
               />
             </div>
-            <div className="flex flex-col justify-center">
-              <CardHeader>
+            <div className="flex flex-col justify-center p-6">
+              <CardHeader className="p-0">
+                <Badge className="w-fit mb-2">About Us</Badge>
                 <CardTitle className="text-3xl font-bold text-primary">
                   Your Trusted Local Plumber
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4 text-muted-foreground">
+              <CardContent className="p-0 mt-4 space-y-4 text-muted-foreground">
                 <p>
                   With over 15 years of hands-on experience in the plumbing industry, FlowPro Plumbing was founded on the principles of honesty, integrity, and unparalleled craftsmanship. I am a certified master plumber dedicated to providing top-quality solutions that last.
                 </p>

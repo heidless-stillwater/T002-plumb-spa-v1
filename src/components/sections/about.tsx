@@ -10,7 +10,7 @@ export default function AboutSection() {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="relative h-64 md:h-auto">
               <Image
-                src="https://placehold.co/600x600.png"
+                src="https://storage.googleapis.com/heidless_case_studies/c-plumbing/plumber-1.jpeg"
                 alt="Professional plumber"
                 data-ai-hint="plumber portrait"
                 layout="fill"

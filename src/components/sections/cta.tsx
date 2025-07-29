@@ -7,7 +7,7 @@ export default function CtaSection() {
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Ready for a FlowPro Fix?
         </h2>
-        <p className="mx-auto max-w-[600px] mt-4 mb-8 text-[17px]">
+        <p className="mx-auto max-w-[600px] mt-4 mb-8 text-[30px]">
           Don't let plumbing problems disrupt your day. Contact us now for a free, no-obligation estimate and experience the FlowPro difference.
         </p>
         <a href="#contact">

@@ -34,10 +34,10 @@ const formSchema = z.object({
 });
 
 const contactDetails = [
-  { icon: <Phone className="h-5 w-5 text-primary" />, info: '(123) 456-7890', href: 'tel:123-456-7890' },
-  { icon: <Mail className="h-5 w-5 text-primary" />, info: 'contact@flowpro.com', href: 'mailto:contact@flowpro.com' },
-  { icon: <MapPin className="h-5 w-5 text-primary" />, info: '123 Plumbing Rd, Anytown, USA' },
-  { icon: <Globe className="h-5 w-5 text-primary" />, info: 'www.flowproplumbing.com' },
+  { icon: <Phone className="h-5 w-5 text-primary" />, info: '8888 567 890', href: 'tel:8888567890' },
+  { icon: <Mail className="h-5 w-5 text-primary" />, info: 'jon@test.com', href: 'mailto:jon@test.com' },
+  { icon: <MapPin className="h-5 w-5 text-primary" />, info: 'Up Then Down, London N4 2TG' },
+  { icon: <Globe className="h-5 w-5 text-primary" />, info: 'this_website.com' },
 ];
 
 export default function ContactSection() {

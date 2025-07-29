@@ -48,11 +48,11 @@ export default function Header() {
         </nav>
         <div className="ml-auto flex items-center gap-4">
           <a
-            href="tel:123-456-7890"
+            href="tel:8888567890"
             className="hidden items-center gap-2 text-[18px] font-medium text-muted-foreground transition-colors hover:text-primary sm:flex"
           >
             <Phone className="h-4 w-4" />
-            <span>(123) 456-7890</span>
+            <span>8888 567 890</span>
           </a>
           <a href="#contact">
             <Button className="text-[18px]">Start Here</Button>
@@ -89,11 +89,11 @@ export default function Header() {
                   ))}
                 </nav>
                  <a
-                  href="tel:123-456-7890"
+                  href="tel:8888567890"
                   className="mt-auto flex items-center justify-center gap-2 rounded-md border p-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                 >
                   <Phone className="h-4 w-4" />
-                  <span>(123) 456-7890</span>
+                  <span>8888 567 890</span>
                 </a>
               </div>
             </SheetContent>

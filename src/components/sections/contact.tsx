@@ -36,8 +36,8 @@ const formSchema = z.object({
 const contactDetails = [
   { icon: <Phone className="h-5 w-5 text-primary" />, info: '8888 567 890', href: 'tel:8888567890' },
   { icon: <Mail className="h-5 w-5 text-primary" />, info: 'jon@test.com', href: 'mailto:jon@test.com' },
-  { icon: <MapPin className="h-5 w-5 text-primary" />, info: 'Up Then Down, London N4 2TG' },
-  { icon: <Globe className="h-5 w-5 text-primary" />, info: 'this_website.com' },
+  { icon: <MapPin className="h-5 w-5 text-primary" />, info: 'Woodberry Down, London N4 2TG' },
+  { icon: <Globe className="h-5 w-5 text-primary" />, info: 'this_site.com' },
 ];
 
 export default function ContactSection() {

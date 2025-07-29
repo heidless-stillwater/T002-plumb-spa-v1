@@ -2,7 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { Sun, Moon, Palette, Paintbrush, SwatchBook, Pipette, Grape, Cog } from 'lucide-react';
+import { 
+  Sun, Moon, Palette, Paintbrush, SwatchBook, Pipette, Grape, Cog,
+  Trees, Terminal, CakeSlice, Hexagon, Palmtree, Building2, Sunset,
+  Gamepad2, Heart, Ghost, Sprout, Droplets, Headphones, Wand,
+  Brush, Gem, Mountain, Briefcase, FlaskConical, TestTube,
+  GitFork, Coffee, Snowflake
+} from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -19,10 +25,33 @@ import {
 import { Switch } from '@/components/ui/switch';
 
 const customThemes = [
-  'forest', 'cyberpunk', 'cupcake', 'bumblebee', 'emerald', 'corporate', 
-  'synthwave', 'retro', 'valentine', 'halloween', 'garden', 'aqua', 'lofi', 
-  'pastel', 'fantasy', 'wireframe', 'black', 'luxury', 'dracula', 'cmyk', 
-  'autumn', 'business', 'acid', 'lemonade', 'night', 'coffee', 'winter'
+  { name: 'forest', icon: Trees },
+  { name: 'cyberpunk', icon: Terminal },
+  { name: 'cupcake', icon: CakeSlice },
+  { name: 'bumblebee', icon: Hexagon },
+  { name: 'emerald', icon: Palmtree },
+  { name: 'corporate', icon: Building2 },
+  { name: 'synthwave', icon: Sunset },
+  { name: 'retro', icon: Gamepad2 },
+  { name: 'valentine', icon: Heart },
+  { name: 'halloween', icon: Ghost },
+  { name: 'garden', icon: Sprout },
+  { name: 'aqua', icon: Droplets },
+  { name: 'lofi', icon: Headphones },
+  { name: 'pastel', icon: Wand },
+  { name: 'fantasy', icon: Brush },
+  { name: 'wireframe', icon: GitFork },
+  { name: 'black', icon: Palette },
+  { name: 'luxury', icon: Gem },
+  { name: 'dracula', icon: Palmtree },
+  { name: 'cmyk', icon: Palette },
+  { name: 'autumn', icon: Mountain },
+  { name: 'business', icon: Briefcase },
+  { name: 'acid', icon: FlaskConical },
+  { name: 'lemonade', icon: TestTube },
+  { name: 'night', icon: Moon },
+  { name: 'coffee', icon: Coffee },
+  { name: 'winter', icon: Snowflake }
 ];
 
 const primaryColors = [
@@ -118,12 +147,15 @@ export function ThemeSwitcher() {
           </DropdownMenuSubTrigger>
           <DropdownMenuPortal>
             <DropdownMenuSubContent>
-              {customThemes.map((t) => (
-                <DropdownMenuItem key={t} onClick={() => handleThemeChange(t)} style={{ color: themePrimaryColors[t] }}>
-                  <Pipette className="mr-2 h-4 w-4" style={{ color: themePrimaryColors[t] }} />
-                  {t.charAt(0).toUpperCase() + t.slice(1)}
-                </DropdownMenuItem>
-              ))}
+              {customThemes.map((t) => {
+                const Icon = t.icon;
+                return (
+                  <DropdownMenuItem key={t.name} onClick={() => handleThemeChange(t.name)}>
+                    <Icon className="mr-2 h-4 w-4" style={{ color: themePrimaryColors[t.name] }} />
+                    {t.name.charAt(0).toUpperCase() + t.name.slice(1)}
+                  </DropdownMenuItem>
+                )
+              })}
             </DropdownMenuSubContent>
           </DropdownMenuPortal>
         </DropdownMenuSub>

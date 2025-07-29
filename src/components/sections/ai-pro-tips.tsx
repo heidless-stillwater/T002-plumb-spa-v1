@@ -13,6 +13,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Badge } from "../ui/badge";
 
 const tipTopics = [
   "Leaky Faucet",
@@ -47,8 +48,9 @@ export default function AiProTipsSection() {
     <section id="ai-tips" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
+          <Badge className="w-fit mb-2">AI Plumbing Tips</Badge>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl flex items-center justify-center gap-2">
-            <Sparkles className="h-8 w-8 text-primary" /> AI-Powered Pro Tips
+            <Sparkles className="h-8 w-8 text-primary" /> AI-Powered Tips
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
             Select a common issue to get an instant, AI-generated plumbing tip.

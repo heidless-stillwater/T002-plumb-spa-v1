@@ -25,71 +25,62 @@ import {
 import { Switch } from '@/components/ui/switch';
 
 const customThemes = [
-  { name: 'forest', icon: Trees },
-  { name: 'cyberpunk', icon: Terminal },
-  { name: 'cupcake', icon: CakeSlice },
-  { name: 'bumblebee', icon: Hexagon },
-  { name: 'emerald', icon: Palmtree },
-  { name: 'corporate', icon: Building2 },
-  { name: 'synthwave', icon: Sunset },
-  { name: 'retro', icon: Gamepad2 },
-  { name: 'valentine', icon: Heart },
-  { name: 'halloween', icon: Ghost },
-  { name: 'garden', icon: Sprout },
-  { name: 'aqua', icon: Droplets },
-  { name: 'lofi', icon: Headphones },
-  { name: 'pastel', icon: Wand },
-  { name: 'fantasy', icon: Brush },
-  { name: 'wireframe', icon: GitFork },
-  { name: 'black', icon: Palette },
-  { name: 'luxury', icon: Gem },
-  { name: 'dracula', icon: Palmtree },
-  { name: 'cmyk', icon: Palette },
-  { name: 'autumn', icon: Mountain },
-  { name: 'business', icon: Briefcase },
-  { name: 'acid', icon: FlaskConical },
-  { name: 'lemonade', icon: TestTube },
-  { name: 'night', icon: Moon },
-  { name: 'coffee', icon: Coffee },
-  { name: 'winter', icon: Snowflake }
+  { name: 'forest', icon: Trees, color: '#28a745' },
+  { name: 'cyberpunk', icon: Terminal, color: '#8a2be2' },
+  { name: 'cupcake', icon: CakeSlice, color: '#e83e8c' },
+  { name: 'bumblebee', icon: Hexagon, color: '#ffc107' },
+  { name: 'emerald', icon: Palmtree, color: '#20c997' },
+  { name: 'corporate', icon: Building2, color: '#4e73df' },
+  { name: 'synthwave', icon: Sunset, color: '#ff00ff' },
+  { name: 'retro', icon: Gamepad2, color: '#ef7c8e' },
+  { name: 'valentine', icon: Heart, color: '#e83e8c' },
+  { name: 'halloween', icon: Ghost, color: '#ff7f50' },
+  { name: 'garden', icon: Sprout, color: '#28a745' },
+  { name: 'aqua', icon: Droplets, color: '#00ffff' },
+  { name: 'lofi', icon: Headphones, color: '#808080' },
+  { name: 'pastel', icon: Wand, color: '#ffc0cb' },
+  { name: 'fantasy', icon: Brush, color: '#6f42c1' },
+  { name: 'wireframe', icon: GitFork, color: '#b8b8b8' },
+  { name: 'black', icon: Palette, color: '#000000' },
+  { name: 'luxury', icon: Gem, color: '#d4af37' },
+  { name: 'dracula', icon: Palmtree, color: '#ff79c6' },
+  { name: 'cmyk', icon: Palette, color: '#00ffff' },
+  { name: 'autumn', icon: Mountain, color: '#d98c26' },
+  { name: 'business', icon: Briefcase, color: '#1e90ff' },
+  { name: 'acid', icon: FlaskConical, color: '#7fff00' },
+  { name: 'lemonade', icon: TestTube, color: '#f0e68c' },
+  { name: 'night', icon: Moon, color: '#343a40' },
+  { name: 'coffee', icon: Coffee, color: '#6f4e37' },
+  { name: 'winter', icon: Snowflake, color: '#87ceeb' }
 ];
 
 const primaryColors = [
-  'red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 
-  'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose'
+  { name: 'red', color: 'red' },
+  { name: 'orange', color: 'orange' },
+  { name: 'amber', color: 'amber' },
+  { name: 'yellow', color: 'yellow' },
+  { name: 'lime', color: 'lime' },
+  { name: 'green', color: 'green' },
+  { name: 'emerald', color: 'emerald' },
+  { name: 'teal', color: 'teal' },
+  { name: 'cyan', color: 'cyan' },
+  { name: 'sky', color: 'skyblue' },
+  { name: 'blue', color: 'blue' },
+  { name: 'indigo', color: 'indigo' },
+  { name: 'violet', color: 'violet' },
+  { name: 'purple', color: 'purple' },
+  { name: 'fuchsia', color: 'fuchsia' },
+  { name: 'pink', color: 'pink' },
+  { name: 'rose', color: 'rose' }
 ];
 
-const greyscaleColors = ['slate', 'gray', 'zinc', 'neutral', 'stone'];
-
-const themePrimaryColors: { [key: string]: string } = {
-  forest: '#28a745',
-  cyberpunk: '#8a2be2',
-  cupcake: '#e83e8c',
-  bumblebee: '#ffc107',
-  emerald: '#20c997',
-  corporate: '#4e73df',
-  synthwave: '#ff00ff',
-  retro: '#ef7c8e',
-  valentine: '#e83e8c',
-  halloween: '#ff7f50',
-  garden: '#28a745',
-  aqua: '#00ffff',
-  lofi: '#808080',
-  pastel: '#ffc0cb',
-  fantasy: '#6f42c1',
-  wireframe: '#b8b8b8',
-  black: '#000000',
-  luxury: '#d4af37',
-  dracula: '#ff79c6',
-  cmyk: '#00ffff',
-  autumn: '#d98c26',
-  business: '#1e90ff',
-  acid: '#7fff00',
-  lemonade: '#f0e68c',
-  night: '#343a40',
-  coffee: '#6f4e37',
-  winter: '#87ceeb',
-};
+const greyscaleColors = [
+    { name: 'slate', color: 'slategray' },
+    { name: 'gray', color: 'gray' },
+    { name: 'zinc', color: 'zinc' },
+    { name: 'neutral', color: 'neutral' },
+    { name: 'stone', color: 'stone' }
+];
 
 
 export function ThemeSwitcher() {
@@ -109,7 +100,7 @@ export function ThemeSwitcher() {
     return null;
   }
   
-  const isDark = resolvedTheme?.endsWith('-dark') || resolvedTheme === 'dark';
+  const isDark = resolvedTheme?.endsWith('-dark');
 
   const handleThemeChange = (newTheme: string) => {
     setBaseTheme(newTheme);
@@ -134,7 +125,7 @@ export function ThemeSwitcher() {
         <div className="flex items-center justify-between px-2 py-1.5">
           <span className="text-sm font-medium">Dark Mode</span>
           <Switch
-            checked={isDark}
+            checked={!!isDark}
             onCheckedChange={handleToggle}
             aria-label="Toggle dark mode"
           />
@@ -151,7 +142,7 @@ export function ThemeSwitcher() {
                 const Icon = t.icon;
                 return (
                   <DropdownMenuItem key={t.name} onClick={() => handleThemeChange(t.name)}>
-                    <Icon className="mr-2 h-4 w-4" style={{ color: themePrimaryColors[t.name] }} />
+                    <Icon className="mr-2 h-4 w-4" style={{ color: t.color }} />
                     {t.name.charAt(0).toUpperCase() + t.name.slice(1)}
                   </DropdownMenuItem>
                 )
@@ -166,10 +157,10 @@ export function ThemeSwitcher() {
           </DropdownMenuSubTrigger>
           <DropdownMenuPortal>
             <DropdownMenuSubContent>
-              {primaryColors.map((color) => (
-                <DropdownMenuItem key={color} onClick={() => handleThemeChange(color)}>
-                  <Grape className="mr-2 h-4 w-4" style={{ color }}/>
-                  {color.charAt(0).toUpperCase() + color.slice(1)}
+              {primaryColors.map((colorTheme) => (
+                <DropdownMenuItem key={colorTheme.name} onClick={() => handleThemeChange(colorTheme.name)}>
+                  <Pipette className="mr-2 h-4 w-4" style={{ color: colorTheme.color }}/>
+                  {colorTheme.name.charAt(0).toUpperCase() + colorTheme.name.slice(1)}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuSubContent>
@@ -182,10 +173,10 @@ export function ThemeSwitcher() {
           </DropdownMenuSubTrigger>
           <DropdownMenuPortal>
             <DropdownMenuSubContent>
-              {greyscaleColors.map((color) => (
-                <DropdownMenuItem key={color} onClick={() => handleThemeChange(color)}>
-                   <Cog className="mr-2 h-4 w-4" style={{ color }} />
-                  {color.charAt(0).toUpperCase() + color.slice(1)}
+              {greyscaleColors.map((colorTheme) => (
+                <DropdownMenuItem key={colorTheme.name} onClick={() => handleThemeChange(colorTheme.name)}>
+                   <Cog className="mr-2 h-4 w-4" style={{ color: colorTheme.color }} />
+                  {colorTheme.name.charAt(0).toUpperCase() + colorTheme.name.slice(1)}
                 </DropdownMenuItem>
               ))}
             </DropdownMenuSubContent>

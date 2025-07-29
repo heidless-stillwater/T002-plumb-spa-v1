@@ -20,8 +20,8 @@ const services = [
   },
   {
     icon: <ShieldCheck className="h-10 w-10 text-accent" />,
-    title: "Preventative TEST Maintenance",
-    description: "Avoid future TEST disasters with our comprehensive maintenance checks and preventative care plans.",
+    title: "Preventative Maintenance",
+    description: "Avoid future disasters with our comprehensive maintenance checks and preventative care plans.",
   },
 ];
 
@@ -32,7 +32,7 @@ export default function ServicesSection() {
         <div className="text-center mb-12">
           <Badge className="w-fit mb-2">our Services</Badge>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Our TEST Plumbing Services
+            Our Plumbing Services
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
             We offer a comprehensive range of services to meet all your plumbing needs.

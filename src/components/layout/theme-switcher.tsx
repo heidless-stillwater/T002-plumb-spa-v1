@@ -7,7 +7,7 @@ import {
   Trees, Terminal, CakeSlice, Hexagon, Palmtree, Building2, Sunset,
   Gamepad2, Heart, Ghost, Sprout, Droplets, Headphones, Wand,
   Brush, Gem, Mountain, Briefcase, FlaskConical, TestTube,
-  GitFork, Coffee, Snowflake
+  GitFork, Coffee, Snowflake, Home
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -61,7 +61,6 @@ const primaryColors = [
   { name: 'yellow', color: 'yellow' },
   { name: 'lime', color: 'lime' },
   { name: 'green', color: 'green' },
-  { name: 'emerald', color: 'emerald' },
   { name: 'teal', color: 'teal' },
   { name: 'cyan', color: 'cyan' },
   { name: 'sky', color: 'skyblue' },
@@ -130,6 +129,11 @@ export function ThemeSwitcher() {
             aria-label="Toggle dark mode"
           />
         </div>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem onClick={() => handleThemeChange('light')}>
+          <Home className="mr-2 h-4 w-4" />
+          <span>Default</span>
+        </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuSub>
           <DropdownMenuSubTrigger>

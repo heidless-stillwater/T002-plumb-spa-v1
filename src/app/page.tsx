@@ -1,4 +1,5 @@
 import AboutSection from "@/components/sections/about";
+import AiProTipsSection from "@/components/sections/ai-pro-tips";
 import ContactSection from "@/components/sections/contact";
 import CtaSection from "@/components/sections/cta";
 import HeroSection from "@/components/sections/hero";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <AiProTipsSection />
       <CtaSection />
       <TestimonialsSection />
       <ContactSection />

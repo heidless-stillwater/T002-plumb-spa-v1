@@ -32,6 +32,37 @@ const primaryColors = [
 
 const greyscaleColors = ['slate', 'gray', 'zinc', 'neutral', 'stone'];
 
+const themePrimaryColors: { [key: string]: string } = {
+  forest: '#28a745',
+  cyberpunk: '#8a2be2',
+  cupcake: '#e83e8c',
+  bumblebee: '#ffc107',
+  emerald: '#20c997',
+  corporate: '#4e73df',
+  synthwave: '#ff00ff',
+  retro: '#ef7c8e',
+  valentine: '#e83e8c',
+  halloween: '#ff7f50',
+  garden: '#28a745',
+  aqua: '#00ffff',
+  lofi: '#808080',
+  pastel: '#ffc0cb',
+  fantasy: '#6f42c1',
+  wireframe: '#b8b8b8',
+  black: '#000000',
+  luxury: '#d4af37',
+  dracula: '#ff79c6',
+  cmyk: '#00ffff',
+  autumn: '#d98c26',
+  business: '#1e90ff',
+  acid: '#7fff00',
+  lemonade: '#f0e68c',
+  night: '#343a40',
+  coffee: '#6f4e37',
+  winter: '#87ceeb',
+};
+
+
 export function ThemeSwitcher() {
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -88,8 +119,8 @@ export function ThemeSwitcher() {
           <DropdownMenuPortal>
             <DropdownMenuSubContent>
               {customThemes.map((t) => (
-                <DropdownMenuItem key={t} onClick={() => handleThemeChange(t)}>
-                  <Pipette className="mr-2 h-4 w-4" style={{ color: `hsl(var(--primary))`}} />
+                <DropdownMenuItem key={t} onClick={() => handleThemeChange(t)} style={{ color: themePrimaryColors[t] }}>
+                  <Pipette className="mr-2 h-4 w-4" style={{ color: themePrimaryColors[t] }} />
                   {t.charAt(0).toUpperCase() + t.slice(1)}
                 </DropdownMenuItem>
               ))}

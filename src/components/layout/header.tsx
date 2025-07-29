@@ -36,26 +36,26 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
-          <Logo className="h-6 w-6 text-primary" />
-          <span className="hidden font-bold sm:inline-block">
+          <Logo className="h-[23px] w-[23px] text-primary" />
+          <span className="hidden font-bold sm:inline-block text-[23px]">
             FlowPro Plumbing
           </span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <nav className="hidden items-center gap-6 text-lg font-medium md:flex">
           {navLinks.map((link) => (
-            <NavLink key={link.href} {...link} />
+            <NavLink key={link.href} {...link} className="text-[18px]" />
           ))}
         </nav>
         <div className="ml-auto flex items-center gap-4">
           <a
             href="tel:123-456-7890"
-            className="hidden items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary sm:flex"
+            className="hidden items-center gap-2 text-[18px] font-medium text-muted-foreground transition-colors hover:text-primary sm:flex"
           >
             <Phone className="h-4 w-4" />
             <span>(123) 456-7890</span>
           </a>
           <a href="#contact">
-            <Button>Start Here</Button>
+            <Button className="text-[18px]">Start Here</Button>
           </a>
           <ThemeSwitcher />
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>

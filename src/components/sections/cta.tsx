@@ -4,7 +4,7 @@ export default function CtaSection() {
   return (
     <section id="cta" className="py-16 sm:py-24 bg-accent text-accent-foreground">
       <div className="container text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Ready for a FlowPro Fix?
         </h2>
         <p className="mx-auto max-w-[600px] mt-4 mb-8">

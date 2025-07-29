@@ -14,7 +14,7 @@ export default function HeroSection() {
       />
       <div className="absolute inset-0 bg-black/50 z-10" />
       <div className="container relative z-20 flex flex-col items-center gap-6">
-        <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl font-headline">
+        <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl">
           Expert Plumbing, Unbeatable Service.
         </h1>
         <p className="max-w-[700px] text-lg text-gray-200 md:text-xl">

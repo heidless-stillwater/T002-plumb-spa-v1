@@ -74,7 +74,7 @@ export default function ContactSection() {
     <section id="contact" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Get in Touch
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
@@ -84,7 +84,7 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h3 className="text-2xl font-bold font-headline">Contact Information</h3>
+            <h3 className="text-2xl font-bold">Contact Information</h3>
             <Card>
               <CardContent className="p-6 space-y-6">
                 {contactDetails.map((detail, index) => (
@@ -101,7 +101,7 @@ export default function ContactSection() {
             </Card>
           </div>
           <div>
-            <h3 className="text-2xl font-bold font-headline mb-8">Send Us a Message</h3>
+            <h3 className="text-2xl font-bold mb-8">Send Us a Message</h3>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField

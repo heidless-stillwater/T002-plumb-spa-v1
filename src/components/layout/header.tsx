@@ -37,7 +37,7 @@ export default function Header() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
           <Logo className="h-6 w-6 text-primary" />
-          <span className="hidden font-bold font-headline sm:inline-block">
+          <span className="hidden font-bold sm:inline-block">
             FlowPro Plumbing
           </span>
         </Link>
@@ -70,7 +70,7 @@ export default function Header() {
                 <div className="flex items-center justify-between border-b pb-4">
                   <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
                     <Logo className="h-6 w-6 text-primary" />
-                    <span className="font-bold font-headline">FlowPro Plumbing</span>
+                    <span className="font-bold">FlowPro Plumbing</span>
                   </Link>
                   <SheetTrigger asChild>
                      <Button variant="ghost" size="icon">

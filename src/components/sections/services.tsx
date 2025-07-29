@@ -29,7 +29,7 @@ export default function ServicesSection() {
     <section id="services" className="py-16 sm:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Our Plumbing Services
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
@@ -43,7 +43,7 @@ export default function ServicesSection() {
                 <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
                   {service.icon}
                 </div>
-                <CardTitle className="font-headline">{service.title}</CardTitle>
+                <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">{service.description}</p>

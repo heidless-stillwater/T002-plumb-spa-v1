@@ -18,7 +18,7 @@ export default function AboutSection() {
             </div>
             <div className="flex flex-col justify-center">
               <CardHeader>
-                <CardTitle className="text-3xl font-bold font-headline text-primary">
+                <CardTitle className="text-3xl font-bold text-primary">
                   Your Trusted Local Plumber
                 </CardTitle>
               </CardHeader>

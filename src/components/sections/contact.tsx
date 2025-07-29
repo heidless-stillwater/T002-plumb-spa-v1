@@ -73,7 +73,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-secondary">
+    <section id="contact" className="py-16 sm:py-24 bg-card">
       <div className="container">
         <div className="text-center mb-12">
           <Badge className="w-fit mb-2">Contact Us</Badge>

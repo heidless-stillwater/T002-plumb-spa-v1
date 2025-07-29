@@ -26,7 +26,7 @@ const testimonials = [
     name: "David Chen",
     avatar: "DC",
     title: "Property Manager",
-    quote: "I manage multiple properties and FlowPro is my go-to for all plumbing needs. They are consistently professional, fairly priced, and do excellent work. A true TEST partner.",
+    quote: "I manage multiple properties and FlowPro is my go-to for all plumbing needs. They are consistently professional, fairly priced, and do excellent work. A true partner.",
   },
 ];
 
@@ -37,10 +37,10 @@ export default function TestimonialsSection() {
         <div className="text-center mb-12">
           <Badge className="w-fit mb-2">Testimonials</Badge>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            What Our TEST Clients Say
+            What Our Clients Say
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
-            We're proud of our work and our clients TEST agree.
+            We're proud of our work and our clients agree.
           </p>
         </div>
         <Carousel

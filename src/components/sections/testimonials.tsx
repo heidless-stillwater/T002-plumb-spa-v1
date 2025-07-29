@@ -26,14 +26,8 @@ const testimonials = [
     name: "David Chen",
     avatar: "DC",
     title: "Property Manager",
-    quote: "I manage multiple properties and FlowPro is my go-to for all plumbing needs. They are consistently professional, fairly priced, and do excellent work. A true partner.",
+    quote: "I manage multiple properties and FlowPro is my go-to for all plumbing needs. They are consistently professional, fairly priced, and do excellent work. A true TEST partner.",
   },
-  {
-      name: "Emily White",
-      avatar: "EW",
-      title: "Homeowner",
-      quote: "The team installed a new water heater for us. The process was smooth, clean, and they took the time to explain everything. We're very happy with the result.",
-  }
 ];
 
 export default function TestimonialsSection() {

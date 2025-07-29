@@ -35,18 +35,20 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <Link href="/" className="mr-6 flex items-center gap-2">
+        <Link href="/" className="mr-auto flex items-center gap-2">
           <Logo className="h-[23px] w-[23px] text-primary" />
           <span className="hidden font-bold sm:inline-block text-[23px]">
             FlowPro Plumbing
           </span>
         </Link>
+        
         <nav className="hidden items-center gap-6 text-lg font-medium md:flex">
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} className="text-[18px]" />
           ))}
         </nav>
-        <div className="ml-auto flex items-center gap-4">
+
+        <div className="ml-6 flex items-center gap-4">
           <a
             href="tel:8888567890"
             className="hidden items-center gap-2 text-[18px] font-medium text-muted-foreground transition-colors hover:text-primary sm:flex"

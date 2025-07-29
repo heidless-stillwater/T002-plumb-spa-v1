@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -40,11 +41,12 @@ export default function TestimonialsSection() {
     <section id="testimonials" className="py-16 sm:py-24 bg-secondary">
       <div className="container">
         <div className="text-center mb-12">
+          <Badge className="w-fit mb-2">Testimonials</Badge>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            What Our Clients Say
+            What Our TEST Clients Say
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
-            We're proud of our work and our clients agree.
+            We're proud of our work and our clients TEST agree.
           </p>
         </div>
         <Carousel

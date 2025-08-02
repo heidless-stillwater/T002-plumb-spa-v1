@@ -26,16 +26,6 @@ const categoryLabels: Record<ThemeCategory, string> = {
   greyscaleThemes: 'Greyscale',
 }
 
-function getDescriptiveThemeName(themeName: string) {
-    if (themeName === 'SET_1_PALETTE_0') {
-        return 'Ocean Breeze';
-    }
-    if (themeName === 'SET_1_PALETTE_1') {
-        return 'Cosmic Indigo';
-    }
-    return themeName;
-}
-
 function ThemeColorSwatch({ theme, size = 'sm' }: { theme: ThemeDefinition; size?: 'sm' | 'md' }) {
     const { mode } = useTheme();
     const sizeClasses = size === 'md' ? 'w-4 h-4' : 'w-3 h-3'
@@ -81,7 +71,6 @@ function ThemeMenuItem({ theme, category, isActive }: {
   isActive: boolean;
 }) {
   const { setColorTheme } = useTheme()
-  const descriptiveName = getDescriptiveThemeName(theme.name);
 
   return (
     <DropdownMenuItem
@@ -94,7 +83,7 @@ function ThemeMenuItem({ theme, category, isActive }: {
             {theme.symbol}
           </span>
         )}
-        <span>{descriptiveName}</span>
+        <span>{theme.name}</span>
       </div>
       <div className="flex items-center gap-2">
         <ThemeColorSwatch theme={theme} />

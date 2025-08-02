@@ -27,8 +27,11 @@ const categoryLabels: Record<ThemeCategory, string> = {
 }
 
 function getDescriptiveThemeName(themeName: string) {
-    if (themeName.startsWith('SET_1_PALETTE_')) {
-        return `Ocean Breeze ${themeName.split('_').pop()}`;
+    if (themeName === 'SET_1_PALETTE_0') {
+        return 'Ocean Breeze';
+    }
+    if (themeName === 'SET_1_PALETTE_1') {
+        return 'Cosmic Indigo';
     }
     return themeName;
 }

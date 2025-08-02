@@ -18,29 +18,35 @@ import {
 import { Switch } from '@/components/ui/switch';
 import { appThemes } from '@/lib/themes';
 
-const ThemeSymbol = ({ symbol }: { symbol?: 'circle' | 'square' | 'star' }) => {
+const ThemeSymbol = ({
+  symbol,
+  color,
+}: {
+  symbol?: 'circle' | 'square' | 'star';
+  color?: string;
+}) => {
   if (!symbol) return null;
   const symbolMap = {
     circle: '●',
     square: '■',
     star: '★',
   };
-  return <span className="mr-2">{symbolMap[symbol]}</span>;
+  return (
+    <span className="mr-2" style={{ color }}>
+      {symbolMap[symbol]}
+    </span>
+  );
 };
 
 export function ThemeSwitcher() {
   const { theme, mode, setTheme, setMode } = useTheme();
 
   const renderThemeMenuItems = (
-    themes: typeof appThemes.primaryColorsThemes
+    themes: (typeof appThemes.primaryColorsThemes)[0][]
   ) => {
     return themes.map((t) => (
       <DropdownMenuItem key={t.name} onClick={() => setTheme(t.name)}>
-        <div
-          className="mr-2 h-4 w-4 rounded-sm border"
-          style={{ backgroundColor: t.swatchColor }}
-        />
-        <ThemeSymbol symbol={t.symbol} />
+        <ThemeSymbol symbol={t.symbol} color={t.swatchColor} />
         <span className="capitalize">{t.name}</span>
         {theme === t.name && <Check className="ml-auto h-4 w-4" />}
       </DropdownMenuItem>

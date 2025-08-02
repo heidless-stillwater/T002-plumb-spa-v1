@@ -85,7 +85,7 @@ export function ThemeProvider({
     root.classList.remove('light', 'dark');
     root.classList.add(mode);
 
-    const themeToClassName = (themeName: string) => themeName.toLowerCase().replace(/\s+/g, '-');
+    const themeToClassName = (themeName: string) => themeName.toLowerCase().replace(/[\s_]+/g, '-');
 
     // Remove all color theme classes
     const allThemeClassNames = Object.values(appThemes).flat().map(t => themeToClassName(t.name));

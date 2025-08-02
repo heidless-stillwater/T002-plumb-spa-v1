@@ -19,23 +19,10 @@ import { appThemes, type ThemeCategory, type ThemeDefinition } from '@/lib/theme
 import { Switch } from './ui/switch'
 
 const categoryLabels: Record<ThemeCategory, string> = {
-  customThemes: 'Custom',
   bespokeThemes: 'Bespoke',
   primaryColorsThemes: 'Primary Colors',
   daisyUIThemes: 'DaisyUI Themes',
   greyscaleThemes: 'Greyscale',
-}
-
-const customThemeNames: Record<string, string> = {
-  SET_1_PALETTE_0: 'Ocean Breeze',
-  SET_1_PALETTE_1: 'Cosmic Indigo',
-};
-
-const getDescriptiveThemeName = (themeName: string) => {
-  if (themeName.startsWith('SET_1_PALETTE_')) {
-    return customThemeNames[themeName] || themeName;
-  }
-  return themeName;
 }
 
 function ThemeColorSwatch({ theme, size = 'sm' }: { theme: ThemeDefinition; size?: 'sm' | 'md' }) {
@@ -95,7 +82,7 @@ function ThemeMenuItem({ theme, category, isActive }: {
             {theme.symbol}
           </span>
         )}
-        <span>{getDescriptiveThemeName(theme.name)}</span>
+        <span>{theme.name}</span>
       </div>
       <div className="flex items-center gap-2">
         <ThemeColorSwatch theme={theme} />

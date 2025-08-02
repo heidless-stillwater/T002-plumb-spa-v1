@@ -9,7 +9,7 @@ export interface ThemeDefinition {
 
 export type AppThemes = Record<ThemeCategory, ThemeDefinition[]>;
 
-export type ThemeCategory = 'bespokeThemes' | 'primaryColorsThemes' | 'daisyUIThemes' | 'greyscaleThemes' | 'customThemes';
+export type ThemeCategory = 'customThemes' | 'bespokeThemes' | 'primaryColorsThemes' | 'daisyUIThemes' | 'greyscaleThemes';
 
 
 const createTheme = (
@@ -30,7 +30,102 @@ const createTheme = (
 });
 
 export const appThemes: AppThemes = {
-  customThemes: [],
+  customThemes: [
+    {
+      name: 'SET_1_PALETTE_0',
+      swatchColor: '207 68% 54%',
+      symbol: '●',
+      light: {
+        '--background': '0 0% 97%',
+        '--foreground': '210 29% 24%',
+        '--card': '0 0% 100%',
+        '--card-foreground': '210 29% 24%',
+        '--popover': '0 0% 100%',
+        '--popover-foreground': '210 29% 24%',
+        '--primary': '207 68% 54%',
+        '--primary-foreground': '0 0% 100%',
+        '--secondary': '181 7% 52%',
+        '--secondary-foreground': '210 29% 24%',
+        '--muted': '181 7% 52%',
+        '--muted-foreground': '181 7% 32%',
+        '--accent': '145 63% 49%',
+        '--accent-foreground': '0 0% 100%',
+        '--destructive': '5 81% 57%',
+        '--destructive-foreground': '0 0% 100%',
+        '--border': '181 7% 52%',
+        '--input': '181 7% 52%',
+        '--ring': '207 68% 54%',
+      },
+      dark: {
+        '--background': '210 29% 14%',
+        '--foreground': '0 0% 97%',
+        '--card': '210 29% 18%',
+        '--card-foreground': '0 0% 97%',
+        '--popover': '210 29% 18%',
+        '--popover-foreground': '0 0% 97%',
+        '--primary': '207 68% 64%',
+        '--primary-foreground': '210 29% 14%',
+        '--secondary': '181 7% 42%',
+        '--secondary-foreground': '0 0% 97%',
+        '--muted': '181 7% 42%',
+        '--muted-foreground': '181 7% 62%',
+        '--accent': '145 63% 59%',
+        '--accent-foreground': '210 29% 14%',
+        '--destructive': '5 81% 67%',
+        '--destructive-foreground': '0 0% 100%',
+        '--border': '181 7% 42%',
+        '--input': '181 7% 42%',
+        '--ring': '207 68% 64%',
+      },
+    },
+    {
+      name: 'SET_1_PALETTE_1',
+      swatchColor: '247 78% 63%',
+      symbol: '★',
+      light: {
+        '--background': '240 33% 14%',
+        '--foreground': '240 100% 94%',
+        '--card': '237 23% 20%',
+        '--card-foreground': '240 100% 94%',
+        '--popover': '237 23% 20%',
+        '--popover-foreground': '240 100% 94%',
+        '--primary': '247 78% 63%',
+        '--primary-foreground': '240 100% 94%',
+        '--secondary': '238 14% 61%',
+        '--secondary-foreground': '240 100% 94%',
+        '--muted': '238 14% 61%',
+        '--muted-foreground': '238 14% 41%',
+        '--accent': '187 100% 42%',
+        '--accent-foreground': '240 33% 14%',
+        '--destructive': '0 100% 71%',
+        '--destructive-foreground': '240 33% 14%',
+        '--border': '238 14% 61%',
+        '--input': '238 14% 61%',
+        '--ring': '247 78% 63%',
+      },
+      dark: {
+        '--background': '240 33% 14%',
+        '--foreground': '240 100% 94%',
+        '--card': '237 23% 20%',
+        '--card-foreground': '240 100% 94%',
+        '--popover': '237 23% 20%',
+        '--popover-foreground': '240 100% 94%',
+        '--primary': '247 78% 63%',
+        '--primary-foreground': '240 100% 94%',
+        '--secondary': '238 14% 61%',
+        '--secondary-foreground': '240 100% 94%',
+        '--muted': '238 14% 61%',
+        '--muted-foreground': '238 14% 41%',
+        '--accent': '187 100% 42%',
+        '--accent-foreground': '240 33% 14%',
+        '--destructive': '0 100% 71%',
+        '--destructive-foreground': '240 33% 14%',
+        '--border': '238 14% 61%',
+        '--input': '238 14% 61%',
+        '--ring': '247 78% 63%',
+      },
+    },
+  ],
   bespokeThemes: [
     {
         name: 'Vibrant Blue',
@@ -471,3 +566,5 @@ export const defaultTheme = {
   name: 'Vibrant Blue',
   mode: 'light' as ThemeMode,
 };
+
+    

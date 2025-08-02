@@ -26,6 +26,18 @@ const categoryLabels: Record<ThemeCategory, string> = {
   greyscaleThemes: 'Greyscale',
 }
 
+const customThemeNames: Record<string, string> = {
+  SET_1_PALETTE_0: 'Ocean Breeze',
+  SET_1_PALETTE_1: 'Cosmic Indigo',
+};
+
+const getDescriptiveThemeName = (themeName: string) => {
+  if (themeName.startsWith('SET_1_PALETTE_')) {
+    return customThemeNames[themeName] || themeName;
+  }
+  return themeName;
+}
+
 function ThemeColorSwatch({ theme, size = 'sm' }: { theme: ThemeDefinition; size?: 'sm' | 'md' }) {
     const { mode } = useTheme();
     const sizeClasses = size === 'md' ? 'w-4 h-4' : 'w-3 h-3'
@@ -83,7 +95,7 @@ function ThemeMenuItem({ theme, category, isActive }: {
             {theme.symbol}
           </span>
         )}
-        <span>{theme.name}</span>
+        <span>{getDescriptiveThemeName(theme.name)}</span>
       </div>
       <div className="flex items-center gap-2">
         <ThemeColorSwatch theme={theme} />
@@ -131,3 +143,5 @@ export function ThemeSwitcher() {
     </DropdownMenu>
   )
 }
+
+    

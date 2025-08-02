@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -7,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Logo from '@/components/icons/logo';
 import { cn } from '@/lib/utils';
+import { ThemeSwitcher } from '@/components/theme-switcher';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -45,7 +47,7 @@ export default function Header() {
             <NavLink key={link.href} {...link} />
           ))}
         </nav>
-        <div className="ml-auto flex items-center gap-4">
+        <div className="ml-auto flex items-center gap-2">
           <a
             href="tel:123-456-7890"
             className="hidden items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary sm:flex"
@@ -56,6 +58,7 @@ export default function Header() {
           <a href="#contact">
             <Button>Start Here</Button>
           </a>
+          <ThemeSwitcher />
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -101,3 +104,5 @@ export default function Header() {
     </header>
   );
 }
+
+    

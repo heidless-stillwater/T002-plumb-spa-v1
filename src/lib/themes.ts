@@ -470,5 +470,3 @@ export const defaultTheme = {
   name: 'Vibrant Blue',
   mode: 'light' as ThemeMode,
 };
-
-    

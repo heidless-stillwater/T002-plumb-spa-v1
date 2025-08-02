@@ -31,6 +31,8 @@ const descriptiveThemeNames: Record<string, string> = {
   SET_1_PALETTE_1: 'Cosmic Indigo',
   SET_1_PALETTE_2: 'Coral Grove',
   SET_1_PALETTE_3: 'Red Sky',
+  SET_1_PALETTE_4: 'Cool Slate',
+  SET_1_PALETTE_5: 'Pastel Sky',
 };
 
 function getDescriptiveThemeName(themeName: string): string {

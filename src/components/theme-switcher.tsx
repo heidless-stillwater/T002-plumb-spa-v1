@@ -1,5 +1,4 @@
 
-      
 'use client'
 
 import * as React from 'react'
@@ -20,10 +19,18 @@ import { appThemes, type ThemeCategory, type ThemeDefinition } from '@/lib/theme
 import { Switch } from './ui/switch'
 
 const categoryLabels: Record<ThemeCategory, string> = {
+  customThemes: 'Custom',
   bespokeThemes: 'Bespoke',
   primaryColorsThemes: 'Primary Colors',
   daisyUIThemes: 'DaisyUI Themes',
   greyscaleThemes: 'Greyscale',
+}
+
+function getDescriptiveThemeName(themeName: string) {
+    if (themeName.startsWith('SET_1_PALETTE_')) {
+        return `Ocean Breeze ${themeName.split('_').pop()}`;
+    }
+    return themeName;
 }
 
 function ThemeColorSwatch({ theme, size = 'sm' }: { theme: ThemeDefinition; size?: 'sm' | 'md' }) {
@@ -71,6 +78,7 @@ function ThemeMenuItem({ theme, category, isActive }: {
   isActive: boolean;
 }) {
   const { setColorTheme } = useTheme()
+  const descriptiveName = getDescriptiveThemeName(theme.name);
 
   return (
     <DropdownMenuItem
@@ -83,7 +91,7 @@ function ThemeMenuItem({ theme, category, isActive }: {
             {theme.symbol}
           </span>
         )}
-        <span>{theme.name}</span>
+        <span>{descriptiveName}</span>
       </div>
       <div className="flex items-center gap-2">
         <ThemeColorSwatch theme={theme} />
@@ -109,6 +117,7 @@ export function ThemeSwitcher() {
         <DropdownMenuSeparator />
         
         {(Object.keys(appThemes) as ThemeCategory[]).map((cat) => (
+          appThemes[cat].length > 0 &&
           <DropdownMenuSub key={cat}>
             <DropdownMenuSubTrigger>
               <Palette className="mr-2 h-4 w-4" />
@@ -130,5 +139,3 @@ export function ThemeSwitcher() {
     </DropdownMenu>
   )
 }
-      
-    

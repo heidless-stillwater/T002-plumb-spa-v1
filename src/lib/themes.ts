@@ -35,46 +35,46 @@ export const appThemes: AppThemes = {
       name: 'SET_1_PALETTE_0',
       swatchColor: '207 72% 53%',
       light: {
-        '--background': '0 0% 97.3%',
+        '--background': '210 17% 98%',
         '--foreground': '215 28% 17%',
         '--card': '0 0% 100%',
         '--card-foreground': '215 28% 17%',
         '--popover': '0 0% 100%',
         '--popover-foreground': '215 28% 17%',
-        '--primary': '207 88% 58%',
+        '--primary': '207 68% 54%',
         '--primary-foreground': '0 0% 100%',
         '--secondary': '215 14% 55%',
         '--secondary-foreground': '215 28% 17%',
         '--muted': '215 14% 55%',
         '--muted-foreground': '215 14% 45%',
-        '--accent': '142 71% 45%',
+        '--accent': '145 63% 49%',
         '--accent-foreground': '0 0% 100%',
         '--destructive': '5 81% 57%',
         '--destructive-foreground': '0 0% 100%',
         '--border': '215 14% 55%',
         '--input': '215 14% 55%',
-        '--ring': '207 88% 58%',
+        '--ring': '207 68% 54%',
       },
       dark: {
         '--background': '215 28% 17%',
-        '--foreground': '0 0% 97.3%',
+        '--foreground': '210 17% 98%',
         '--card': '215 28% 17%',
-        '--card-foreground': '0 0% 97.3%',
+        '--card-foreground': '210 17% 98%',
         '--popover': '215 28% 17%',
-        '--popover-foreground': '0 0% 97.3%',
-        '--primary': '207 88% 58%',
+        '--popover-foreground': '210 17% 98%',
+        '--primary': '207 68% 54%',
         '--primary-foreground': '0 0% 100%',
         '--secondary': '215 14% 35%',
-        '--secondary-foreground': '0 0% 97.3%',
+        '--secondary-foreground': '210 17% 98%',
         '--muted': '215 14% 35%',
         '--muted-foreground': '215 14% 65%',
-        '--accent': '142 71% 45%',
+        '--accent': '145 63% 49%',
         '--accent-foreground': '0 0% 100%',
         '--destructive': '5 81% 57%',
         '--destructive-foreground': '0 0% 100%',
         '--border': '215 14% 35%',
         '--input': '215 14% 35%',
-        '--ring': '207 88% 58%',
+        '--ring': '207 68% 54%',
       },
     },
     {
@@ -128,7 +128,6 @@ export const appThemes: AppThemes = {
     {
         name: 'Vibrant Blue',
         swatchColor: '207 70% 53%',
-        symbol: '●',
         light: {
             '--background': '210 32% 97%',
             '--foreground': '224 10% 16%',
@@ -175,7 +174,6 @@ export const appThemes: AppThemes = {
     {
         name: 'Coral-Peach',
         swatchColor: '16 100% 65%',
-        symbol: '★',
         light: {
             '--background': '28 83% 95%',
             '--foreground': '27 23% 24%',
@@ -222,7 +220,6 @@ export const appThemes: AppThemes = {
     {
       name: 'Ruby-Sky',
       swatchColor: '0 100% 71%',
-      symbol: '●',
       light: {
         '--background': '180 50% 99%',
         '--foreground': '0 0% 27%',
@@ -269,7 +266,6 @@ export const appThemes: AppThemes = {
     {
       name: 'Coolish-Slate',
       swatchColor: '248 80% 66%',
-      symbol: '★',
       light: {
         '--background': '212 22% 95%',
         '--foreground': '212 25% 22%',
@@ -316,7 +312,6 @@ export const appThemes: AppThemes = {
     {
       name: 'Fuchsia-Cyan',
       swatchColor: '330 100% 50%',
-      symbol: '★',
       light: {
         '--background': '0 0% 4%',
         '--foreground': '0 0% 96%',
@@ -363,7 +358,6 @@ export const appThemes: AppThemes = {
     {
       name: 'Indigo-Amber',
       swatchColor: '211 78% 46%',
-      symbol: '●',
       light: {
         '--background': '231 48% 94%',
         '--foreground': '0 0% 13%',
@@ -410,7 +404,6 @@ export const appThemes: AppThemes = {
     {
       name: 'Indigo Night',
       swatchColor: '271 76% 53%',
-      symbol: '■',
       light: {
         '--background': '240 14% 15%',
         '--foreground': '220 100% 96%',
@@ -457,7 +450,6 @@ export const appThemes: AppThemes = {
     {
       name: 'Emerald Isle',
       swatchColor: '134 61% 40%',
-      symbol: '●',
       light: {
         '--background': '120 100% 98%',
         '--foreground': '210 10% 23%',
@@ -566,3 +558,4 @@ export const defaultTheme = {
 };
 
     
+  

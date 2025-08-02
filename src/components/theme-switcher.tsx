@@ -23,6 +23,19 @@ const categoryLabels: Record<ThemeCategory, string> = {
   primaryColorsThemes: 'Primary Colors',
   daisyUIThemes: 'DaisyUI Themes',
   greyscaleThemes: 'Greyscale',
+  customThemes: 'Custom',
+}
+
+const descriptiveThemeNames: Record<string, string> = {
+  SET_1_PALETTE_0: 'Ocean Breeze',
+  SET_1_PALETTE_1: 'Cosmic Indigo',
+};
+
+function getDescriptiveThemeName(themeName: string): string {
+  if (themeName.startsWith('SET_1_PALETTE_')) {
+    return descriptiveThemeNames[themeName] || themeName;
+  }
+  return themeName;
 }
 
 function ThemeColorSwatch({ theme, size = 'sm' }: { theme: ThemeDefinition; size?: 'sm' | 'md' }) {
@@ -82,7 +95,7 @@ function ThemeMenuItem({ theme, category, isActive }: {
             {theme.symbol}
           </span>
         )}
-        <span>{theme.name}</span>
+        <span>{getDescriptiveThemeName(theme.name)}</span>
       </div>
       <div className="flex items-center gap-2">
         <ThemeColorSwatch theme={theme} />
@@ -130,3 +143,5 @@ export function ThemeSwitcher() {
     </DropdownMenu>
   )
 }
+
+    

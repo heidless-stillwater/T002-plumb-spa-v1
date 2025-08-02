@@ -9,7 +9,7 @@ export interface ThemeDefinition {
 
 export type AppThemes = Record<ThemeCategory, ThemeDefinition[]>;
 
-export type ThemeCategory = 'bespokeThemes' | 'primaryColorsThemes' | 'daisyUIThemes' | 'greyscaleThemes';
+export type ThemeCategory = 'bespokeThemes' | 'primaryColorsThemes' | 'daisyUIThemes' | 'greyscaleThemes' | 'customThemes';
 
 
 const createTheme = (
@@ -30,6 +30,102 @@ const createTheme = (
 });
 
 export const appThemes: AppThemes = {
+  customThemes: [
+    {
+      name: 'SET_1_PALETTE_0',
+      swatchColor: '207 72% 53%',
+      symbol: '●',
+      light: {
+        '--background': '0 0% 97%',
+        '--foreground': '210 29% 24%',
+        '--card': '0 0% 100%',
+        '--card-foreground': '210 29% 24%',
+        '--popover': '0 0% 100%',
+        '--popover-foreground': '210 29% 24%',
+        '--primary': '207 72% 53%',
+        '--primary-foreground': '0 0% 100%',
+        '--secondary': '181 5% 52%',
+        '--secondary-foreground': '0 0% 100%',
+        '--muted': '181 5% 52%',
+        '--muted-foreground': '181 5% 32%',
+        '--accent': '145 63% 49%',
+        '--accent-foreground': '0 0% 100%',
+        '--destructive': '6 78% 57%',
+        '--destructive-foreground': '0 0% 100%',
+        '--border': '181 5% 52%',
+        '--input': '181 5% 52%',
+        '--ring': '207 72% 53%',
+      },
+      dark: {
+        '--background': '210 29% 14%',
+        '--foreground': '0 0% 87%',
+        '--card': '210 29% 10%',
+        '--card-foreground': '0 0% 87%',
+        '--popover': '210 29% 10%',
+        '--popover-foreground': '0 0% 87%',
+        '--primary': '207 72% 53%',
+        '--primary-foreground': '0 0% 100%',
+        '--secondary': '181 5% 32%',
+        '--secondary-foreground': '0 0% 100%',
+        '--muted': '181 5% 32%',
+        '--muted-foreground': '181 5% 52%',
+        '--accent': '145 63% 39%',
+        '--accent-foreground': '0 0% 100%',
+        '--destructive': '6 78% 47%',
+        '--destructive-foreground': '0 0% 100%',
+        '--border': '181 5% 32%',
+        '--input': '181 5% 32%',
+        '--ring': '207 72% 53%',
+      },
+    },
+    {
+      name: 'SET_1_PALETTE_1',
+      swatchColor: '246 76% 63%',
+      symbol: '★',
+      light: {
+        '--background': '240 33% 94%',
+        '--foreground': '240 100% 24%',
+        '--card': '237 23% 90%',
+        '--card-foreground': '240 100% 24%',
+        '--popover': '237 23% 90%',
+        '--popover-foreground': '240 100% 24%',
+        '--primary': '246 76% 63%',
+        '--primary-foreground': '0 0% 100%',
+        '--secondary': '238 12% 60%',
+        '--secondary-foreground': '0 0% 100%',
+        '--muted': '238 12% 60%',
+        '--muted-foreground': '238 12% 40%',
+        '--accent': '187 100% 42%',
+        '--accent-foreground': '0 0% 100%',
+        '--destructive': '0 100% 71%',
+        '--destructive-foreground': '0 0% 100%',
+        '--border': '238 12% 60%',
+        '--input': '238 12% 60%',
+        '--ring': '246 76% 63%',
+      },
+      dark: {
+        '--background': '240 33% 14%',
+        '--foreground': '240 100% 94%',
+        '--card': '237 23% 20%',
+        '--card-foreground': '240 100% 94%',
+        '--popover': '237 23% 20%',
+        '--popover-foreground': '240 100% 94%',
+        '--primary': '246 76% 63%',
+        '--primary-foreground': '0 0% 100%',
+        '--secondary': '238 12% 60%',
+        '--secondary-foreground': '0 0% 100%',
+        '--muted': '238 12% 40%',
+        '--muted-foreground': '238 12% 60%',
+        '--accent': '187 100% 42%',
+        '--accent-foreground': '0 0% 100%',
+        '--destructive': '0 100% 71%',
+        '--destructive-foreground': '0 0% 100%',
+        '--border': '238 12% 40%',
+        '--input': '238 12% 40%',
+        '--ring': '246 76% 63%',
+      },
+    },
+  ],
   bespokeThemes: [
     {
         name: 'Vibrant Blue',
@@ -470,3 +566,5 @@ export const defaultTheme = {
   name: 'Vibrant Blue',
   mode: 'light' as ThemeMode,
 };
+
+    

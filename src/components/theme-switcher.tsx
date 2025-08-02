@@ -33,6 +33,10 @@ const descriptiveThemeNames: Record<string, string> = {
   SET_1_PALETTE_3: 'Red Sky',
   SET_1_PALETTE_4: 'Cool Slate',
   SET_1_PALETTE_5: 'Pastel Sky',
+  SET_1_PALETTE_6: 'Neon Fusion',
+  SET_1_PALETTE_7: 'Material Blue',
+  SET_1_PALETTE_8: 'Vaporwave Violet',
+  SET_1_PALETTE_9: 'Growth Green',
 };
 
 function getDescriptiveThemeName(themeName: string): string {
@@ -147,3 +151,5 @@ export function ThemeSwitcher() {
     </DropdownMenu>
   )
 }
+
+    

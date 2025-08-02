@@ -124,7 +124,7 @@ export function ThemeProvider({
 
   const value = {
     mode,
-    setMode,
+    setMode: setMode as (mode: ThemeMode) => void,
     colorTheme,
     setColorTheme,
     toggleMode,

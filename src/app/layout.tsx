@@ -1,16 +1,19 @@
 import type { Metadata } from 'next';
-import { PT_Sans } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
-import { ThemeProvider } from '@/components/layout/theme-provider';
 
-const fontSans = PT_Sans({
+const fontBody = Inter({
   subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-sans',
+  variable: '--font-body',
+});
+
+const fontHeadline = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-headline',
 });
 
 export const metadata: Metadata = {
@@ -28,23 +31,17 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
-          fontSans.variable
+          'min-h-screen bg-background font-body antialiased',
+          fontBody.variable,
+          fontHeadline.variable
         )}
       >
-        <ThemeProvider
-          attribute="data-theme"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="relative flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-          <Toaster />
-        </ThemeProvider>
+        <div className="relative flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
+        <Toaster />
       </body>
     </html>
   );

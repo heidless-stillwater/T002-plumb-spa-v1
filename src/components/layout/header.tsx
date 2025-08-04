@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Logo from '@/components/icons/logo';
 import { cn } from '@/lib/utils';
+import { ThemeSwitcher } from '@/components/theme-switcher';
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -50,6 +51,7 @@ export default function Header() {
         </nav>
 
         <div className="ml-auto flex items-center gap-4">
+          <ThemeSwitcher />
           <a
             href="tel:8888567890"
             className="hidden items-center gap-2 text-[18px] font-medium text-muted-foreground transition-colors hover:text-primary sm:flex"

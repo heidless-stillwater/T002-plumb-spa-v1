@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -44,7 +43,7 @@ export default function TestimonialsSection() {
             What Our Clients Say
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed mt-4">
-            We're proud of our work and our clients TEST agree.
+            We're proud of our work and our clients agree.
           </p>
         </div>
         <Carousel

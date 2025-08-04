@@ -21,7 +21,7 @@ const services = [
   {
     icon: <ShieldCheck className="h-10 w-10 text-accent" />,
     title: "Preventative Maintenance",
-    description: "Avoid future disasters with our comprehensive maintenance checks and preventative care TEST plans.",
+    description: "Avoid future disasters with our comprehensive maintenance checks and preventative care plans.",
   },
 ];
 

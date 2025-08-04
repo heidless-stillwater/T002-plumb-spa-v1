@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -51,7 +52,6 @@ export default function Header() {
         </nav>
 
         <div className="ml-auto flex items-center gap-4">
-          <ThemeSwitcher />
           <a
             href="tel:8888567890"
             className="hidden items-center gap-2 text-[18px] font-medium text-muted-foreground transition-colors hover:text-primary sm:flex"
@@ -62,6 +62,7 @@ export default function Header() {
           <a href="#contact">
             <Button className="text-[18px]">Start Here</Button>
           </a>
+          <ThemeSwitcher />
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
